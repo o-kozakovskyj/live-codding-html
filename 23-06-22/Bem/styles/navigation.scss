@@ -1,0 +1,87 @@
+.navigation {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+  @include onDesktop {
+    flex-direction: row;
+    margin: 0;
+    justify-content: space-between;
+  }
+
+
+  &__title {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Unica One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: $mainTextColor;
+    margin: 0 0 0.625em;
+  }
+
+  &__container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    @include onTablet {
+      display: flex;
+      flex-direction: row;
+    }
+
+    @include onDesktop {
+      margin: 0;
+    }
+  }
+
+  &__chooser {
+    text-transform: uppercase;
+
+    &:last-child {
+      margin-top: 20px;
+
+      @include onTablet {
+        margin-top: 0;
+      }
+    }
+
+  }
+
+  &__label {
+
+    text-align: center;
+    font-size: .75em;
+    font-weight: 700;
+    color: $secondaryTextColor;
+    display: block;
+    margin-bottom: 13px;
+
+    @include onDesktop {
+      margin-bottom: 0;
+      display: flex;
+      padding-left: 15px;
+    }
+  }
+
+  &__select {
+    cursor: pointer;
+    background: transparent;
+    width: 120px;
+    padding: 7px 28px 7px 15px;
+    border: 1px solid #dedede;
+    font-weight: 700;
+    background-color: $lightBackground;
+    color: $inputTextColor;
+    background-image: url(//cdn.shopify.com/s/files/1/0938/8938/t/18/assets/ico-select.svg?v=1245925112819775442);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    appearance: none;
+
+    @include onDesktop {
+      border: none;
+    }
+  }
+}

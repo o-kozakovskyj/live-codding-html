@@ -1,0 +1,17 @@
+@mixin onTablet {
+  @media (min-width: 337px) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media (min-width: 750px) {
+    @content;
+  }
+}
+
+$mainFont: 'Karla', sans-serif;
+$lightBackground: #f4f4f4;
+$mainTextColor: #030303;
+$inputTextColor: #333;
+$secondaryTextColor: #666;

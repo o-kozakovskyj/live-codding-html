@@ -7,14 +7,18 @@
   <title>Bem</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Unica+One&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
-  <nav class="navigation">
+<body class="page">
+  <nav class="navigation page__navigation">
     <h2 class="navigation__title">Jackets</h2>
     <div class="navigation__container">
-      <div class="navigation__filter">
+      <div class="navigation__chooser">
         <label class="navigation__label">Filter by</label>
         <select class="navigation__select">
           <option>All</option>
@@ -23,8 +27,8 @@
           <option>Jackets</option>
         </select>
       </div>
-      <div class="navigation__sort">
-        <label class="navigation__label">Order by</label>
+      <div class="navigation__chooser">
+        <label class="navigation__label">Sort by</label>
         <select class="navigation__select">
           <option>Featured</option>
           <option>2016</option>
@@ -34,18 +38,10 @@
       </div>
     </div>
   </nav>
-  <section class="products">
-    <div class="product-card">
-      <span class="product-card__sale">Sale</span>
-      <div class="product-card__img-wrapper">
-        <img class="product-card__img" src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg">
-      </div>
-      <div class="product-card__info">
-        <h5 class="product-card__title">Haze Varsity</h5>
-        <h6 class="product-card__price">$132.96</h6>
-      </div>
-    </div>
-    <div class="product-card">
+  <section class="products page__products">
+   
+    <a class="product-card" href="https://venture-theme-snowboards.myshopify.com/collections/jackets/products/burton-men-s-haze-varsity-jacket-2014">
+      <span class="product-card__sale-label">Sale</span>
       <div class="product-card__img-wrapper">
         <img class="product-card__img"
           src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg">
@@ -54,8 +50,28 @@
         <h5 class="product-card__title">Haze Varsity</h5>
         <h6 class="product-card__price">$132.96</h6>
       </div>
-    </div>
-    <div class="product-card">
+    </a>
+    <a class="product-card" href="https://venture-theme-snowboards.myshopify.com/collections/jackets/products/burton-men-s-haze-varsity-jacket-2014">
+      <div class="product-card__img-wrapper">
+        <img class="product-card__img"
+          src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg">
+      </div>
+      <div class="product-card__info">
+        <h5 class="product-card__title">Greed Jacket</h5>
+        <h6 class="product-card__price">From $161</h6>
+      </div>
+    </a>
+    <a class="product-card" href="https://venture-theme-snowboards.myshopify.com/collections/jackets/products/burton-men-s-haze-varsity-jacket-2014">
+      <div class="product-card__img-wrapper">
+        <img class="product-card__img"
+          src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg">
+      </div>
+      <div class="product-card__info">
+        <h5 class="product-card__title">Greed Jacket</h5>
+        <h6 class="product-card__price">$139.96</h6>
+      </div>
+    </a>
+    <a class="product-card" href="https://venture-theme-snowboards.myshopify.com/collections/jackets/products/burton-men-s-haze-varsity-jacket-2014">
       <div class="product-card__img-wrapper">
         <img class="product-card__img"
           src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg">
@@ -64,8 +80,8 @@
         <h5 class="product-card__title">Haze Varsity</h5>
         <h6 class="product-card__price">$132.96</h6>
       </div>
-    </div>
-    <div class="product-card">
+    </a>
+    <a class="product-card" href="https://venture-theme-snowboards.myshopify.com/collections/jackets/products/burton-men-s-haze-varsity-jacket-2014">
       <div class="product-card__img-wrapper">
         <img class="product-card__img"
           src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg">
@@ -74,7 +90,17 @@
         <h5 class="product-card__title">Haze Varsity</h5>
         <h6 class="product-card__price">$132.96</h6>
       </div>
-    </div>
+    </a>
+    <a class="product-card" href="https://venture-theme-snowboards.myshopify.com/collections/jackets/products/burton-men-s-haze-varsity-jacket-2014">
+      <div class="product-card__img-wrapper">
+        <img class="product-card__img"
+          src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1080x.jpeg">
+      </div>
+      <div class="product-card__info">
+        <h5 class="product-card__title">Greed Jacket</h5>
+        <h6 class="product-card__price">From $161</h6>
+      </div>
+    </a>
   </section>
 </body>
 

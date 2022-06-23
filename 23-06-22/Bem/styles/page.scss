@@ -1,0 +1,20 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 40px 10px;
+  min-width: 320px;
+  font-family: $mainFont;
+
+  background-color: $lightBackground;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: $secondaryTextColor;
+  line-height: 1.375;
+
+  &__products {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
